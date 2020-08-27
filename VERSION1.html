@@ -181,19 +181,19 @@
 				// }
 
 
-				var loader = new THREE.GLTFLoader();
+			var loader = new THREE.GLTFLoader();
 		    var loader2 = new THREE.GLTFLoader();
 		    var loader3 = new THREE.GLTFLoader();
-				var loader4 = new THREE.GLTFLoader();
+			var loader4 = new THREE.GLTFLoader();
 
 
-				loader.load('BFA2018004.glb', handle_load);
+			loader.load('BFA2018004.glb', handle_load);
 		    var mesh;
 		    loader2.load('BFPA2018004.glb', handle_load2);
 		    var mesh2;
 		    loader3.load('BFLS2018004.glb', handle_load3);
 		    var mesh3;
-				loader4.load('BFRS2018004.glb', handle_load4);
+			loader4.load('BFRS2018004.glb', handle_load4);
 		    var mesh4;
 
 
@@ -241,7 +241,7 @@
 				  mesh3.position.x = -25;
 		    }
 
-				function handle_load4(gltf){
+			function handle_load4(gltf){
 		      console.log(gltf);
 		      mesh4 = gltf.scene;
 		      console.log(mesh4.children[0]);
@@ -257,7 +257,7 @@
 		      scene.add( mesh );
 		      scene.add( mesh2 );
 		      scene.add( mesh3 );
-					scene.add( mesh4 );
+			  scene.add( mesh4 );
 
 					//document.getElementById("mesh").checked = true;
 
