@@ -456,17 +456,7 @@
         }
 
 
-        document.getElementById('load').addEventListener('click', function() {
-          //mesh2.visible = ! mesh2.visible;
-          scene.add( mesh );
-          scene.add( mesh2 );
-          scene.add( mesh3 );
-          scene.add( mesh4 );
-
-                //document.getElementById("mesh").checked = true;
-
-                //document.getElementById("mesh").checked = true;
-        });
+       
 
         document.getElementById('hideShow').addEventListener('click', function() {
           mesh.visible = ! mesh.visible;
@@ -485,32 +475,7 @@
              mesh4.visible = ! mesh4.visible;
 
          });
-
-         document.getElementById('hideShow5').addEventListener('click', function() {
-            mesh.visible = ! mesh.visible;
-            mesh2.visible = ! mesh2.visible;
-            mesh3.visible = ! mesh3.visible;
-            mesh4.visible = ! mesh4.visible;
-
-
-        });
-
-         document.getElementById('hideShow6').toggleButton.addEventListener('click', function() {
-            //mesh.visible = ! mesh.visible;
-            // mesh2.visible = ! mesh2.visible;
-            // mesh3.visible = ! mesh3.visible;
-            // mesh4.visible = ! mesh4.visible;
-            // mesh5.visible = ! mesh5.visible;
-            scene.remove(mesh);
-            scene.remove(mesh2);
-            scene.remove(mesh3);
-            scene.remove(mesh4);
-
-
-
-        });
-
-
+         
             // lights
 
             var light = new THREE.DirectionalLight( 0xffffff, 2 );
